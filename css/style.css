@@ -129,6 +129,28 @@ nav ul li a.active::after {
     width: 100%;
 }
 
+#nav-menu a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #3E64FF;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+#nav-menu a:hover::after,
+#nav-menu a.active::after {
+    width: 100%;
+}
+
 .mobile-menu-btn {
     display: none;
     cursor: pointer;
@@ -740,6 +762,52 @@ nav ul li a.active::after {
     transform: translateX(4px);
 }
 
+/* Certifications Section */
+.certifications-container {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.cert-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cert-section h3 {
+    color: #3E64FF;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.cert-list li:before {
+    content: "•";
+    color: #3E64FF;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+    .certifications-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Contact Section */
 #contact {
     background-color: var(--light-gray);
@@ -806,7 +874,7 @@ nav ul li a.active::after {
     color: var(--text-color);
 }
 
-.social-links {
+social-links {
     display: flex;
     gap: 15px;
     margin-top: 30px;
