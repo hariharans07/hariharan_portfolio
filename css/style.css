@@ -1338,3 +1338,20 @@ footer {
     color: #333;
     font-size: 1.5rem;
 }
+
+.cert-grid.dual-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cert-grid.dual-column .cert-item {
+    width: 100%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .cert-grid.dual-column {
+        grid-template-columns: 1fr;
+    }
+}
