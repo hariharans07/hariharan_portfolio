@@ -1355,3 +1355,65 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.cert-validation {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.validation-text {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.validate-link {
+    color: #3E64FF;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #3E64FF;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.validate-link:hover {
+    background: #3E64FF;
+    color: white;
+}
+
+.cert-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cert-content {
+    text-align: center;
+}
+
+.cert-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.validate-link, .cert-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid #3E64FF;
+    border-radius: 4px;
+    color: #3E64FF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.validate-link:hover, .cert-link:hover {
+    background: #3E64FF;
+    color: white;
+}
+
+.validate-link i, .cert-link i {
+    margin-right: 8px;
+}
